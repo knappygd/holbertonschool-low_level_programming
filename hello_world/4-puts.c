@@ -1,19 +1,13 @@
 #include <stdio.h>
 /**
- * this is the short desc of the main() function
+ * main - entry point
  *
- * this is the longer one
- * main is basically the entry point of our program
+ * return - always 0
  */
 int main(void)
 {
 	char string[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(string);
-	/**
-	 * return - error code 0: no error
-	 *
-	 * this indicates that main() exited successfully
-	 */
 	return (0);
 }
