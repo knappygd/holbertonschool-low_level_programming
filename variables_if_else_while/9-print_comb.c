@@ -9,12 +9,13 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n < 10; n++)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(n);
-	}
-	for (n = 'a'; n < 'f'; n++)
-	{
+		if (n != 58 && n != 48)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		putchar(n);
 	}
 	putchar('\n');
