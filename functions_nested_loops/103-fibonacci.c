@@ -26,7 +26,7 @@ int main(void)
 		n1 = n2;
 		n2 = next;
 	}
-	printf("%.0f", res);
+	printf("%.0f\n", res);
 
 	return (0);
 }
