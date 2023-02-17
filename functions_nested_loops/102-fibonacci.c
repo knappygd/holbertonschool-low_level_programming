@@ -11,17 +11,21 @@ int main(void)
 
 	for (i = 0; i < 50; i++)
 	{
-		if (i == 50)
-		{
-			printf("%ld", next);
-		}
-		printf("%ld, ", next);
+		printf("%ld", next);
 
 		n1 = n2;
 		n2 = next;
 		next = n1 + n2;
+
+		if (i == 49)
+		{
+			printf("\n");
+		}
+		else
+		{
+			printf(", ");
+		}
 	}
-	printf("\n");
 
 	return (0);
 }
