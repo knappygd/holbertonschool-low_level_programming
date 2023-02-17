@@ -9,8 +9,12 @@ int main(void)
 	unsigned long n1 = 0, n2 = 1, next = n1 + n2;
 	int i;
 
-	for (i = 0; i <= 50; i++)
+	for (i = 0; i < 50; i++)
 	{
+		if (i == 49)
+		{
+			printf("%ld");
+		}
 		printf("%ld, ", next);
 
 		n1 = n2;
