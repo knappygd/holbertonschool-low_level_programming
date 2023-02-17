@@ -4,7 +4,7 @@
  *
  * Return: sum
  */
-int main(sum)
+int main(int sum)
 {
 	int n;
 	int res;
