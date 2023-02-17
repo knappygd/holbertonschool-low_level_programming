@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 0; i <= 50; i++)
 	{
-		printf("%d, ", next);
+		printf("%ld, ", next);
 
 		n1 = n2;
 		n2 = next;
