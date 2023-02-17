@@ -1,6 +1,8 @@
 #include "main.h"
 /**
  * add - add two ints
+ * @n1: first parameter
+ * @n2: second parameter
  *
  * Return: sum
  */
