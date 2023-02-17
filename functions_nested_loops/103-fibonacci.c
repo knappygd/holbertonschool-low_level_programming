@@ -16,7 +16,7 @@ int main(void)
 		n2 = next;
 		next = n1 + n2;
 
-		while (next < 4000000)
+		if (next < 4000000)
 		{
 			res += next;
 		}
