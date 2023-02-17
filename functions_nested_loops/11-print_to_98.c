@@ -24,6 +24,6 @@ void print_to_98(int n)
 	}
 	else 
 	{
-		puts(n);
+		printf("%d", n);
 	}	
 }
