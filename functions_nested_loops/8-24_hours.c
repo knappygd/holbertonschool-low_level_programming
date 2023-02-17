@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * jack_bauer - print every min of the day
- * 
+ *
  * Return: 0
  */
 void jack_bauer(void)
