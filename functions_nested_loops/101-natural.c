@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	int n = 0;
-	int res = 0;
+	int n;
+	int res;
 
-	for (n = 0; n < 1000; n++)
+	for (n = 0; n < 1024; n++)
 	{
 		if ((n % 3) == 0 || (n % 5) == 0)
 		{
