@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	int n;
-	int res;
+	int n = 0;
+	int res = 0;
 
 	for (n = 0; n < 1000; n++)
 	{
