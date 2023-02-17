@@ -17,5 +17,6 @@ int main(void)
 		}
 	}
 	printf("%d", res);
+	puts('\n');
 	return (0);
 }
