@@ -8,7 +8,6 @@ int main(void)
 {
 	int n;
 	int res;
-	int sum;
 
 	for (n = 0; n < 1000; n++)
 	{
@@ -18,5 +17,5 @@ int main(void)
 		}
 	}
 
-	return (sum);
+	return (res);
 }
