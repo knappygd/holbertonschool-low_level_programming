@@ -16,7 +16,7 @@ int main(void)
 		n2 = next;
 		next = n1 + n2;
 
-		if (next < 4000000)
+		if (n1 < 4000000 && n2 < 4000000)
 		{
 			if (next % 2 == 0)
 			{
