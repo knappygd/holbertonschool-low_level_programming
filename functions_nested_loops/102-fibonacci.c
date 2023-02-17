@@ -6,9 +6,7 @@
  */
 int main(void)
 {
-	int n1 = 0;
-	int n2 = 1;
-	int next = n1 + n2;
+	unsigned long n1 = 0, n2 = 1, next = n1 + n2;
 	int i;
 
 	for (i = 0; i <= 50; i++)
