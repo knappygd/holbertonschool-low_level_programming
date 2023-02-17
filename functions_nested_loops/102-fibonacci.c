@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (i == 49)
 		{
-			printf("%ld");
+			printf("%ld", next);
 		}
 		printf("%ld, ", next);
 
