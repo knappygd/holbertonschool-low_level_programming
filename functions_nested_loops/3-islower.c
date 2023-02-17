@@ -2,6 +2,7 @@
 
 /**
  * _islower - entry point, check for lc char
+ * @n: the char variable to evaluate
  *
  * Return: 0 or 1
  */
