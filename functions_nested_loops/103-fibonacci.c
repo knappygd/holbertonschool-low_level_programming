@@ -18,7 +18,10 @@ int main(void)
 
 		if (next < 4000000)
 		{
-			res += next;
+			if (next % 2 == 0)
+			{
+				res += next;
+			}
 		}
 
 		printf("%ld", res);
