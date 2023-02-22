@@ -27,11 +27,15 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		
+
 		if (i == 100)
+		{
 			continue;
+		}
 		else
+		{
 			printf(" ");
+		}
 	}
 	printf("\n");
 
