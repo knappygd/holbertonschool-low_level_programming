@@ -5,7 +5,7 @@
  */
 void print_triangle(int size)
 {
-	int height, length;
+	int height;
 
 	if (size <= 0)
 	{
