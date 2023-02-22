@@ -14,9 +14,9 @@ void print_square(int size)
 	}
 	else
 	{
-		for (height = 1; height < size; height++)
+		for (height = 1; height < size + 1; height++)
 		{
-			for (length = 1; length < height; length++)
+			for (length = 1; length < height + 1; length++)
 			{
 				_putchar('#');
 			}
