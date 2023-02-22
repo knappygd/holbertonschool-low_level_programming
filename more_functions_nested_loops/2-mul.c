@@ -2,6 +2,8 @@
 
 /**
  * mul - multiply two ints
+ * @a: first int
+ * @b: second int
  *
  * Return: a * b
  */
