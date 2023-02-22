@@ -2,6 +2,7 @@
 
 /**
  * print_line - print lines
+ * @n: n length
  *
  */
 void print_line(int n)
@@ -12,7 +13,7 @@ void print_line(int n)
 	{
 		_putchar('\n');
 	}
-	else 
+	else
 	{
 		for (i = 1; i < n + 1; i++)
 		{
