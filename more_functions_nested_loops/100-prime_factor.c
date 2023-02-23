@@ -7,6 +7,7 @@
 int main(void)
 {
 	long int n, div, maxFact;
+
 	n = 612852475143;
 	div = 2;
 
@@ -16,7 +17,7 @@ int main(void)
 		{
 			div = div + 1;
 		}
-		else 
+		else
 		{
 			maxFact = n;
 			n = n / div;
