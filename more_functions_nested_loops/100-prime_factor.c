@@ -1,31 +1,32 @@
 #include <stdio.h>
-
 /**
- * main - find prime factor
+ * main - entry
+ *
+ * Return: 0
  */
 int main(void)
 {
-	long n = 612852475143;
-	int d;
+	long int n, div, maxFact;
+	n = 612852475143;
+	div = 2;
 
-	while (d < (n / 2))
+	while (n != 0)
 	{
-		if ((n % 2) == 0)
+		if (n % div != 0)
 		{
-			n /= 2;
-			continue;
+			div = div + 1;
 		}
-
-		for (d = 3; d < (n / 2); d += 2)
+		else 
 		{
-			if ((n % d) == 0)
+			maxFact = n;
+			n = n / div;
+			if (n == 1)
 			{
-				n /= d;
+				printf("%ld", maxFact);
+				break;
 			}
 		}
-
-		printf("%ld", n);
-
-		return (0);
 	}
+
+	return (0);
 }
