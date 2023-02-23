@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	unsigned long n1 = 0, n2 = 1, next = n1 + n2;
+	float n1 = 0, n2 = 1, next = n1 + n2;
 	int i;
 
 	for (i = 0; i < 98; i++)
 	{
-		printf("%ld", next);
+		printf("%f", next);
 
 		n1 = n2;
 		n2 = next;
