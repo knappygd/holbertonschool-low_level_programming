@@ -5,7 +5,7 @@
  */
 void print_number(int n)
 {
-	unsigned long ln = n;
+	unsigned int ln = n;
 
 	if (ln / 10 > 0)
 	{
