@@ -5,16 +5,18 @@
  */
 void print_number(int n)
 {
-	if (n / 10 > 0)
+	unsigned long ln = n;
+
+	if (ln / 10 > 0)
 	{
-		print_number(n / 10);
+		print_number(ln / 10);
 	}
 
-	if (n < 0)
+	if (ln < 0)
 	{
 		_putchar('-');
-		n = -n;
+		ln = -ln;
 	}
 
-	_putchar((n % 10) + '0');
+	_putchar((ln % 10) + '0');
 }
