@@ -3,17 +3,17 @@
 /**
  * _strcpy - copy a string
  * @dest: destination buffer
- * @str: strig to copy
+ * @src: strig to copy
  */
 char *_strcpy(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0; src[i] != '\0'; ++i)
+	while (src[i])
 	{
 		dest[i] = src[i];
+		i++;
 	}
-	src[i] = '\0';
 
 	return (dest);
 }
