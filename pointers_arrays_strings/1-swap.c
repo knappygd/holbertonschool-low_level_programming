@@ -6,12 +6,10 @@
  */
 void swap_int(int *a, int *b)
 {
-	int *auxa, *auxb;
-	*auxa = 0;
-	*auxb = 0;
+	int auxa, auxb;
 
-	*auxa = *a;
-	*auxb = *b;
-	*a = *auxb;
-	*b = *auxa;
+	auxa = *a;
+	auxb = *b;
+	*a = auxb;
+	*b = auxa;
 }
