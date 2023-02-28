@@ -4,6 +4,8 @@
 /**
  * cap_string - capitalize
  * @str: string
+ *
+ * Return: string
  */
 char *cap_string(char *str)
 {
@@ -11,14 +13,14 @@ char *cap_string(char *str)
 
 	while (str[i])
 	{
-		if (strlen(str) == 0)
+		if (str[0] > 96 && str[0] < 123)
 		{
-			printf("\n\n");
+			str[0] -= 32;
 		}
 		if (str[i] > 96 && str[i] < 123)
 		{
 			if (str[i - 1] == ' '
-				|| str[i - 1] == '\t'	
+				|| str[i - 1] == '\t'
 				|| str[i - 1] == '\n'
 				|| str[i - 1] == ','
 				|| str[i - 1] == ';'
