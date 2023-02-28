@@ -35,6 +35,10 @@ char *cap_string(char *str)
 			{
 				str[i] -= 32;
 			}
+			else
+			{
+				i++;
+			}
 		}
 
 		i++;
