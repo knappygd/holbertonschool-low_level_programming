@@ -8,8 +8,8 @@
  *     */
 int main(void)
 {
-	char s1[98] = "Hello ";
-	char s2[] = "World!\n";
+	char s1[1] = "";
+	char s2[] = "";
 	char *ptr;
 
 	printf("%s\n", s1);
