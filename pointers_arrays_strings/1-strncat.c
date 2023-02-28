@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strncat - concatenate strings n limit
@@ -11,13 +12,14 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, j;
+	int len = strlen(str);
 
 	while (dest[i] != '\0')
 		i++;
 	
-	if (n > src)
+	if (n > len)
 	{
-		n = src;
+		n = len;
 	}
 	else
 	{
