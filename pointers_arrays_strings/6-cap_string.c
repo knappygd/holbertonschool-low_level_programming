@@ -9,10 +9,12 @@
  */
 char *cap_string(char *str)
 {
-	int i;
+	int i = 0;
 
 	while (str[i])
 	{
+		if (str[0] == (char)0)
+			break;
 		if (str[0] > 96 && str[0] < 123)
 		{
 			str[0] -= 32;
