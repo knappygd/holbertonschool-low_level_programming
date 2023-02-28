@@ -16,22 +16,23 @@ int ctoi(char c)
 int _atoi(char *s)
 {
 	int i, n = 0;
-	int len = strlen(s);
+	/*int len = strlen(s);*/
 
-	for (i = 0; i < len; i++)
+	do 
 	{
+		i++;
+
 		if (s[i] > 47 && s[i] < 58)
 		{
 			n *= 10;
 			n += ctoi(s[i]);
 		}
-
 		else
 		{
 			printf("xd");
-
 		}
 	}
+	while (*s++);
 
 	printf("%d", n / 10);
 
