@@ -11,7 +11,19 @@ char *cap_string(char *str)
 	{
 		if (str[i] > 96 && str[i] < 123)
 		{
-			if (str[i - 1] == ' ')
+			if (str[i - 1] == ' '
+					|| str[i - 1] == '\t'
+					|| str[i - 1] == '\n'
+					|| str[i - 1] == ','
+					|| str[i - 1] == ';'
+					|| str[i - 1] == '.'
+					|| str[i - 1] == '!'
+					|| str[i - 1] == '?'
+					|| str[i - 1] == '"'
+					|| str[i - 1] == '('
+					|| str[i - 1] == ')'
+					|| str[i - 1] == '{'
+					|| str[i - 1] == '}')
 			{
 				str[i] -= 32;
 			}
