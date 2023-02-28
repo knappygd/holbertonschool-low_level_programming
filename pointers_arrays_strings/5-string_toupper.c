@@ -1,7 +1,10 @@
 #include "main.h"
 #include <string.h>
 /**
- * string_topupper - to upper
+ * string_toupper - to upper
+ * @str: string
+ *
+ * Return: string
  */
 char *string_toupper(char *str)
 {
