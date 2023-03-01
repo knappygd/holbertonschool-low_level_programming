@@ -10,15 +10,23 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i;
+	int i = 0;
 	unsigned int len = 0;
 
-	for (i = 0; s[i] >= '\0'; i++)
+	while (*s++)
 	{
-		if (*s == accept[i])
+		if (s[i] == accept[i])
 		{
 			len++;
 		}
+
+		else if (s[i] == '\0')
+		{
+			printf("test");
+			return (len);
+		}
+
+		i++;
 	}
 
 	return (len);
