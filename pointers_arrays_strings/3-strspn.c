@@ -15,18 +15,16 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s++)
 	{
-		for (i = 0; s[i]; i++)
+		while (s[i] != '\0')
 		{
 			if (s[i] == accept[i])
 			{
 				len++;
 			}
 
-			else if (s[i] == '\0')
-			{
-				return (len);
-			}
+			i++;
 		}
+
 	}
 
 	return (len);
