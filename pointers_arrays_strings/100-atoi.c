@@ -1,14 +1,10 @@
 #include "main.h"
 #include <string.h>
 /**
- * _atoi - Check the code.
- * @s: is a string.
- * Return: n.
+ * ctoi - char to int
+ * @c: char
  *
- * ctoi - char to int.
- * @c: char to convert.
- *         
- * ctoi return: an int.
+ * Return: int
  */
 int ctoi(char c)
 {
@@ -16,6 +12,12 @@ int ctoi(char c)
 
 	return (i - '0');
 }
+/**
+ * _atoi - get number from string
+ * @s: string
+ *
+ * Return: number
+ */
 int _atoi(char *s)
 {
 	unsigned int i, n = 0;
