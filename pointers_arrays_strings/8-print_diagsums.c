@@ -21,5 +21,5 @@ void print_diagsums(int *a, int size)
 		is2 += size - 1;
 	}
 
-	printf("%d%d", s1, s2);
+	printf("%d, %d", s1, s2);
 }
