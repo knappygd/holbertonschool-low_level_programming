@@ -15,10 +15,13 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (needle[i] == haystack[i])
 			{
-				haystack = &haystack[i];
-				return (haystack);
+				haystack += &haystack[i];
 			}
+
+			
 		}
+
+		return (haystack);
 
 		haystack++;
 	}
