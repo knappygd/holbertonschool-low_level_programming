@@ -1,19 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- *  * main - check the code for
+ *  * main - check the code
  *   *
  *    * Return: Always 0.
  *     */
 int main(void)
 {
-	int array[5];
-
-	array[0] = 98;
-	array[1] = 402;
-	array[2] = -198;
-	array[3] = 298;
-	array[4] = -1024;
-	print_array(array, 5);
+	int c3[3][3] = {
+		{0, 1, 5},
+		{10, 11, 12},
+		{1000, 101, 102},
+	};
+	print_diagsums((int *)c3, 3);
 	return (0);
 }
