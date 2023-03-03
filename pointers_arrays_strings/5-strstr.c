@@ -23,6 +23,7 @@ char *_strstr(char *haystack, char *needle)
 				{
 					if (haystack[i + 1] == ' ')
 						return (haystack);
+				}
 			}
 		}
 
