@@ -18,7 +18,7 @@ void print_diagsums(int *a, int size)
 	while (is2 < max - size)
 	{
 		s2 += a[is2];
-		is2 += size - 1;
+		is2 += size;
 	}
 
 	printf("%d, %d", s1, s2);
