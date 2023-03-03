@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strstr - same as strstr
  * @haystack: string
@@ -9,7 +10,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i;
 	
-	if (needle == "")
+	if (strlen(needle) == 0)
 		return (0);
 
 	while (*haystack)
