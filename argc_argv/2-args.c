@@ -3,7 +3,7 @@
 /**
  * main - print args received
  * @argc: count
- * @arg: args entered
+ * @argv: args entered
  *
  * Return: 0
  */
