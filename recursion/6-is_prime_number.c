@@ -1,6 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * prime_up - do prime or not
+ * @n: prime
+ * @i: checker 1
+ * @j: checker 2
+ *
+ * Return: result
+ */
 int prime_up(int n, int i, int j)
 {
 	if (i * j == n && j != n)
@@ -10,12 +18,14 @@ int prime_up(int n, int i, int j)
 
 	if (i < n)
 	{
-		return (prime_up(n, (i + 1), j));
+		i++;
+		return (prime_up(n, i, j));
 	}
 
 	if (i == n && j != n)
 	{
-		return (prime_up(n, 1, (j + 1)));
+		j++;
+		return (prime_up(n, 1, j));
 	}
 
 	return (0);
