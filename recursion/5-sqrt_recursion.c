@@ -10,7 +10,7 @@ int square_up(int n, int r)
 		return (r);
 	}
 
-	if (r == n / 2)
+	if (r == n / 2 || n < 0)
 	{
 		return (-1);
 	}
