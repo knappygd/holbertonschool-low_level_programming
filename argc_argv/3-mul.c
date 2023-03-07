@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 	{
 		int fconv = strtol(argv[1], &p, 10);
 		int sconv = strtol(argv[2], &p, 10);
+
 		res = fconv * sconv;
 
 		printf("%d\n", res);
