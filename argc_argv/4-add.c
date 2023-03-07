@@ -11,13 +11,13 @@
 int main(int argc, char *argv[])
 {
 	int res, conv;
-	char *p;
+	char *p = '\0';
 	int i;
 
 	for (i = 1; i < argc; i++)
 	{
 
-		if (!strtol(argv[i], &p, 10))
+		if (!atoi(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
@@ -32,6 +32,5 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", res);
-	
 	return (0);
 }
