@@ -2,6 +2,10 @@
 #include <math.h>
 /**
  * square_up - do the deed
+ * @n: number
+ * @r: root
+ *
+ * Return: result
  */
 int square_up(int n, int r)
 {
