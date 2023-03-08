@@ -1,11 +1,15 @@
 #include "main.h"
-
-void _puts(char *s)
+/**
+ * _puts - print a string
+ * @str: pointer
+ */
+void _puts(char *str)
 {
-	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*str)
 	{
-		_putchar(s[i]);
+		_putchar(*str++);
 	}
+
+	_putchar('\n');
 }
