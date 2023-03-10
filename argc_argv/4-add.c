@@ -25,12 +25,11 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			else
-			{
-				conv = strtol(argv[i], &p, 10);
-				res += conv;
-			}
 		}
+
+		conv = strtol(argv[i], &p, 10);
+		res += conv;
+
 	}
 
 	printf("%d\n", res);
