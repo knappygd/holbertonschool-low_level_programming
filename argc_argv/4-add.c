@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - add numbers
@@ -12,23 +13,24 @@ int main(int argc, char *argv[])
 {
 	int res, conv;
 	char *p = '\0';
-	int i;
+	int i, j;
 
 	for (i = 1; i < argc; i++)
 	{
-
-		if (!atoi(argv[i]))
+		for (j = 0; argv[i][j]; j++)
 		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			conv = strtol(argv[i], &p, 10);
-			res += conv;
-		}
 
-
+			if (isalpha(argv[i][j]) != 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+			{
+				conv = strtol(argv[i], &p, 10);
+				res += conv;
+			}
+		}
 	}
 
 	printf("%d\n", res);
