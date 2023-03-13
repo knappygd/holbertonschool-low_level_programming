@@ -5,6 +5,8 @@
  * create_array - create an array
  * @size: array size
  * @c: content
+ *
+ * Return: array
  */
 char *create_array(unsigned int size, char c)
 {
