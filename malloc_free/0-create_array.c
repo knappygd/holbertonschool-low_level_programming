@@ -22,4 +22,6 @@ char *create_array(unsigned int size, char c)
 	/*free(arr);*/
 
 	return (arr);
+
+	free(arr);
 }
