@@ -4,6 +4,8 @@
 /**
  * malloc_checked - allocate memory
  * @b: bytes
+ *
+ * Return: m
  */
 void *malloc_checked(unsigned int b)
 {
