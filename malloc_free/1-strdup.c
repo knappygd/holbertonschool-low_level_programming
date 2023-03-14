@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	scopy = malloc(sizeof(char) * len + 1);
 
 	if (scopy == NULL)
-		exit(1);
+		return (NULL);
 	
 
 	if (str == NULL)
