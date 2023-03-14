@@ -22,10 +22,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	while (s1 != '\0')
+	while (*s1)
 		len++;
 
-	while (s2 !0 '\0')
+	while (*s2)
 		len2++;
 
 	conc = malloc(sizeof(char) * (len + len2 - 1));
