@@ -16,21 +16,17 @@ char *_strdup(char *str)
 
 	scopy = malloc(sizeof(char) * len + 1);
 
-	
-
 	if (str == NULL)
 		return (NULL);
 
+	if (scopy == NULL)
+		return (NULL);
 
 	while (str[i])
 	{
 		scopy[i] = str[i];
 		i++;
 	}
-
-	if (scopy == NULL)
-		return (NULL);
-
 
 	return (scopy);
 }
