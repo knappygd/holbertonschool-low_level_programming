@@ -19,10 +19,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= len2)
 		return (s2);
 
-	if (s1 == "")
+	if (len == 0)
 		return (s2);
 
-	if (s2 == "")
+	if (len2 == 0)
 		return (s1);
 
 	if (s1 == NULL || s2 == NULL)
