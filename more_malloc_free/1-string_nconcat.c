@@ -30,7 +30,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (conc == NULL)
 			return (NULL);
 
-
 		for (i = 0; i < len; i++)
 		{
 			conc[i] = s1[i];
@@ -42,11 +41,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 
 		conc[i + len] = '\0';
-	}
-	else
-	{
-		return (s2);
+
+		return (conc);
 	}
 
-	return (conc);
+	return (s2);
 }
