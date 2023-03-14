@@ -24,28 +24,31 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len = strlen(s1);
 	len2 = strlen(s2);
-	
+
 	conc = malloc(sizeof(char) * (len + len2 + 1));
 
 	if (conc == NULL)
 		return (NULL);
 
-	/*if (n >= len2)
+	if (n < len2)
 	{
-		printf("it is\n");
-	}*/
 
-	for (i = 0; i < len; i++)
-	{
-		conc[i] = s1[i];
+		for (i = 0; i < len; i++)
+		{
+			conc[i] = s1[i];
+		}
+
+		for (i = 0; i < n; i++)
+		{
+			conc[i + len] = s2[i];
+		}
+
+		conc[i + len] = '\0';
 	}
-
-	for (i = 0; i < n; i++)
+	else 
 	{
-		conc[i + len] = s2[i];
+		return (s2);
 	}
-
-	conc[i + len] = '\0';
 
 	return (conc);
 }
