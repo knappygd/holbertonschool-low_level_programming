@@ -13,6 +13,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	array = malloc(nmemb * size);
 
+	array = 0;
+
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
