@@ -16,8 +16,6 @@ char *_strdup(char *str)
 
 	scopy = malloc(sizeof(char) * len + 1);
 
-	if (scopy == NULL)
-		return (NULL);
 	
 
 	if (str == NULL)
@@ -29,6 +27,10 @@ char *_strdup(char *str)
 		scopy[i] = str[i];
 		i++;
 	}
+
+	if (scopy == NULL)
+		return (NULL);
+
 
 	return (scopy);
 }
