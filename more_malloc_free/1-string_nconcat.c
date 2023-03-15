@@ -28,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = len2;
 	}
 
-	conc = malloc(sizeof(s1) + sizeof(s2) - 4);
+	conc = malloc(sizeof(s1) + sizeof(s2) - 6);
 
 	if (conc == NULL)
 		return (NULL);
