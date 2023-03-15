@@ -17,10 +17,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, len = strlen(s1), len2 = strlen(s2);
 
 	if (s1 == NULL)
-		s1 = "s1";
+		s1 = "";
+		printf("it does");
 
 	if (s2 == NULL)
-		s2 = "s2";
+		s2 = "";
+		printf("it does too");
 
 	if (n >= len2)
 	{
