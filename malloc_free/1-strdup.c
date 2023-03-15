@@ -15,7 +15,7 @@ char *_strdup(char *str)
 	int len = strlen(str);
 	
 	if (str == NULL)
-		return (((void*)0));
+		return ("lol");
 
 	scopy = (char *)malloc(sizeof(char) * (len + 1));
 
