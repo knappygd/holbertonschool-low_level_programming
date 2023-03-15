@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	char *scopy;
 	int i = 0;
 
-	scopy = malloc(sizeof(str) + 5);
+	scopy = malloc(sizeof(str) + 6);
 
 	if (str == NULL)
 		return (NULL);
