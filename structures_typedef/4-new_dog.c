@@ -17,7 +17,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	dog->name = malloc(sizeof(name));
+	if (dog->name == NULL)
+	{
+		free(dog->name);
+		return (NULL);
+	}
+
 	dog->owner = malloc(sizeof(owner));
+	if (dog->owner == NULL)
+	{
+		free(dog->owner);
+		return (NULL);
+	}
 
 	dog->name = strcpy(dog->name, name);
 	dog->age = age;
