@@ -3,9 +3,9 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - print numbers separated with a separator
+ * print_strings - print strings separated with a separator
  * @separator: separator string
- * @n: numbers
+ * @n: times
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -13,8 +13,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list vl;
 	char *string;
 
-	if (separator == NULL)
-		separator = "";
+	if (separator == NULL || n == NULL)
+		separator = n = "";
 
 	va_start(vl, n);
 
