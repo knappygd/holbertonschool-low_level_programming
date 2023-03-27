@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if (n2 == 0 && (*optr == '/' || *optr == '%'))
+	if ((n2 == 0 && *optr == '/') || (n2 == 0 && *optr == '%'))
 	{
 		printf("Error\n");
 		exit(100);
