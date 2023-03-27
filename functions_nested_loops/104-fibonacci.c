@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * main - print fibseq
  *
@@ -6,24 +7,25 @@
  */
 int main(void)
 {
-	unsigned long n1 = 0, n2 = 1, next = n1 + n2;
+	unsigned long n1 = 0, n2 = 1, sum = n1 + n2, half;
 	int i;
+	char buffer[50];
 
 	for (i = 0; i < 98; i++)
 	{
-		printf("%ld", next);
+		printf("%ld, ", sum);
 
 		n1 = n2;
-		n2 = next;
-		next = n1 + n2;
+		n2 = sum;
+		sum = n1 + n2;
 
-		if (i == 97)
+		sprintf(buffer, "%lu", sum);
+
+		if (strlen(buffer) > 19)
 		{
-			printf("\n");
-		}
-		else
-		{
-			printf(", ");
+			half = sum % 10000000000;
+			printf("%lu, ", half);
+
 		}
 	}
 
