@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * print_len - returns the number of elements in a linked list
+ * list_len - returns the number of elements in a linked list
  * @h: struct
  *
  * Return: number of nodes
