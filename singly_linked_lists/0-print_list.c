@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "lists.h"
 
 /**
  * print_list - prints all elelments if a list_t list
