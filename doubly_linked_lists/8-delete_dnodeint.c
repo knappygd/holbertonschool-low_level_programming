@@ -18,10 +18,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	while (index != 0)
 	{
-		buffer = buffer->next;
-
 		if (!buffer)
 			return (-1);
+
+		buffer = buffer->next;
 
 		index--;
 	}
