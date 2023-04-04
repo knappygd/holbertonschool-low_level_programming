@@ -22,8 +22,13 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	new->n = n;
 	new->prev = NULL;
 	new->next = *head;
-
+	
 	if (*head)
+		/*it's between parenthesses 
+		 * bec of the order of operations
+		 * pointer of (head->prev) is not 
+		 * the same as (pointer of head)->prev
+		 */ 
 		(*head)->prev = new;
 
 	*head = new;
