@@ -1,12 +1,13 @@
 #include "main.h"
 #include <string.h>
+#include <limits.h>
+#include <stdlib.h>
 
 /**
- * get_bit - returns the value of a bit at a given index
- * @n: number
- * @index: which digit to check
+ * _print_binary - transform to binary
+ * @n: decimal
  *
- * Return: value of a bit
+ * Return: bin string
  */
 char *_print_binary(unsigned long int n)
 {
@@ -59,6 +60,13 @@ char *_print_binary(unsigned long int n)
 	return (bin);
 }
 
+/**
+ * get_bit - returns the value of a bit at a given index
+ * @n: number
+ * @index: which digit to check
+ *
+ * Return: value of a bit
+ */
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int i;
