@@ -24,7 +24,7 @@ void print_binary(unsigned long int n)
 			power *= 2;
 		}
 
-		power /= 2;
+		power = power >> 1;
 
 		while (power > 0)
 		{
@@ -38,7 +38,7 @@ void print_binary(unsigned long int n)
 				_putchar('0');
 			}
 
-			power /= 2;
+			power = power >> 1;
 		}
 	}
 }
