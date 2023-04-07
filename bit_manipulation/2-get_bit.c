@@ -79,11 +79,9 @@ int get_bit(unsigned long int n, unsigned int index)
 		{
 			return(_print_binary(n)[i]);
 		}
-		else
-		{
-			return (-1);
-		}
 
 		i++;
 	}
+
+	return (-1);
 }
