@@ -69,7 +69,7 @@ char *_print_binary(unsigned long int n)
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int i;
+	unsigned int i = 0;
 
 	_print_binary(n);
 
