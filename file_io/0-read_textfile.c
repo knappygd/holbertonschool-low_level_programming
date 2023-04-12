@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!buflets)
 		return (-1);
 
-	op = open(filename, O_RDONLY);
+	op = open(filename, O_RDWR);
 	if (op == -1)
 	{
 		free(buflets);
@@ -31,7 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buflets);
 		return (0);
 	}
-	wr = write(STDOUT_FILENO, buflets, letters);
+	wr = write(STDOUT_FILENO, buflets, rd);
 	if (wr == -1)
 	{
 		free(buflets);
