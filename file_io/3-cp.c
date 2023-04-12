@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int from, to, rd, cf, ct;
+	int from, to, rd, wr, cf, ct;
 	char *buffer;
 	char *file_from = argv[1];
 	char *file_to = argv[2];
