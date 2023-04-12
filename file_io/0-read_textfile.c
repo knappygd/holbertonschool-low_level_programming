@@ -11,13 +11,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t op, rd, wr;
 	char *buflets;
-	
+
 	if (!filename)
 		return (0);
 
 	buflets = malloc(sizeof(char) * letters);
 	if (!buflets)
-		return (0);
+		return (-1);
 
 	op = open(filename, O_RDONLY);
 	if (op == -1)
