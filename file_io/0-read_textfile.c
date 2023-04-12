@@ -15,7 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		return (0);
 
-	buflets = malloc(sizeof(letters));
+	buflets = malloc(sizeof(char) * letters);
 	if (!buflets)
 		return (0);
 
