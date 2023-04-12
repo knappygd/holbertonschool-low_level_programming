@@ -26,7 +26,7 @@ void close_files(int fdesc)
  */
 int main(int argc, char *argv[])
 {
-	int from, to, rd, wr, cf, ct;
+	int from, to, rd, wr;
 	char *buffer;
 	char *file_from = argv[1];
 	char *file_to = argv[2];
