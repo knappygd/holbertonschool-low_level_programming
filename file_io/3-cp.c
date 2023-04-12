@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
+void close_files(int fdesc);
+
 /**
  * close_files - simple aux function to close open files
  * @fdesc: file to close
