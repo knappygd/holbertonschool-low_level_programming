@@ -25,21 +25,21 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buflets);
 		return (0);
 	}
-	rd = read(open, buflets, letters);
+	rd = read(op, buflets, letters);
 	if (rd == -1)
 	{
 		free(buflets);
 		return (0);
 	}
-	wr = write(read, &buflets, letters);
+	wr = write(rd, &buflets, letters);
 	if (wr == -1)
 	{
 		free(buflets);
 		return (0);
 	}
 
-	close(open);
+	close(op);
 	free(buflets);
 
-	return (write);
+	return (wr);
 }
