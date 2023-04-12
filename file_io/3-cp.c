@@ -2,6 +2,20 @@
 #include <stdio.h>
 
 /**
+ * close_files - simple aux function to close open files
+ * @fdesc: file to close
+ */
+void close_files(int fdesc)
+{
+	int cl = close(fdesc);
+
+	if (cl == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdesc);
+		exit(100);
+	}
+}
+/**
  * main - copy the contents of one file into another
  * @argc: number of arguments passed
  * @argv: an array of the arguments passed
@@ -34,18 +48,21 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
+
 	rd = read(from, buffer, 1024);
 	if (rd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
+
 	to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
+
 	wr = write(to, buffer, rd);
 	if (wr == -1)
 	{
@@ -54,18 +71,8 @@ int main(int argc, char *argv[])
 	}
 
 	free(buffer);
-	cf = close(from);
-	if (cf == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
-		exit(100);
-	}
-	ct = close(to);
-	if (ct == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
-		exit(100);
-	}
+	close_files(from);
+	close_files(to);
 
 	return (0);
 }
