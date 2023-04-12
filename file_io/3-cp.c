@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	while ((rd = read(from, buffer, 1024)) > 0)
+	/*while ((rd = read(from, buffer, 1024)) > 0)
 	{
 		wr = write(to, buffer, rd);
 		if (wr == -1)
@@ -59,10 +59,10 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 			exit(99);
 		}
-	}
+	}*/
 
 
-	/*rd = read(from, buffer, 1024);*/
+	rd = read(from, buffer, 1024);
 	if (rd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
