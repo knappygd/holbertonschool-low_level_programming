@@ -9,7 +9,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t open, read, write;
+	ssize_t op, rd, wr;
 	char *buflets;
 	
 	if (!filename)
@@ -19,20 +19,20 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!buflets)
 		return (0);
 
-	open = open(filename, O_RDONLY);
-	if (open == -1)
+	op = open(filename, O_RDONLY);
+	if (op == -1)
 	{
 		free(buflets);
 		return (0);
 	}
-	read = read(open, buflets, letters);
-	if (read == -1)
+	rd = read(open, buflets, letters);
+	if (rd == -1)
 	{
 		free(buflets);
 		return (0);
 	}
-	write = write(read, &buflets, letters);
-	if (write == -1)
+	wr = write(read, &buflets, letters);
+	if (wr == -1)
 	{
 		free(buflets);
 		return (0);
