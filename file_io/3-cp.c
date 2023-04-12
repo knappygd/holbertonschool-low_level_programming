@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	int from, to, rd, wr, cf, ct;
 	char *buffer;
 	char *file_from = argv[1];
-	char *file_to = argv[2]
+	char *file_to = argv[2];
 
 	if (argc != 3)
 	{
@@ -47,13 +47,13 @@ int main(int argc, char *argv[])
 	cf = close(from);
 	if (cf == -1)
 	{
-		dprintf("Error: Can't close fd FD_VALUE\n");
+		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
 		exit(100);
 	}
 	ct = close(to);
 	if (ct == -1)
 	{
-		dprintf("Error: Can't close fd FD_VALUE\n");
+		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
 		exit(100);
 	}
 
