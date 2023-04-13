@@ -8,15 +8,15 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	long unsigned int i;
+	unsigned long int i;
 	hash_table_t *htable;
 	hash_node_t **node;
 
-       	htable = malloc(sizeof(hash_table_t));
+	htable = malloc(sizeof(hash_table_t));
 	if (!htable)
 		return (NULL);
 
-       	node = malloc(sizeof(hash_node_t *) * size);
+	node = malloc(sizeof(hash_node_t *) * size);
 	if (!node)
 		return (NULL);
 
