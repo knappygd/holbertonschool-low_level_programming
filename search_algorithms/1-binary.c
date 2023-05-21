@@ -6,9 +6,9 @@
  * @array: A pointer to the first value of an array of integers.
  * @size: The size of the given array.
  * @value: The value to search for in the array.
- * 
+ *
  * Return: The index at which the value was found, otherwise -1.
-*/
+ */
 int binary_search(int *array, size_t size, int value)
 {
 	int i = 0, left, right;
@@ -21,6 +21,11 @@ int binary_search(int *array, size_t size, int value)
 
 	while (right >= left)
 	{
+		printf("Searching in array: ");
+		for (i = left; i < right; left++)
+			printf("%d, ", array[i]);
+		printf("%d\n", array[i]);
+
 		print(i, left, right, array);
 
 		if (array[i] == value)
@@ -33,12 +38,4 @@ int binary_search(int *array, size_t size, int value)
 	}
 
 	return (-1);
-}
-
-void print(int i, int left, int right, int *array)
-{
-	printf("Searching in array: ");
-	for (i = left; i < right; left++)
-		printf("%d, ", array[i]);
-	printf("%d\n", array[i]);
 }
